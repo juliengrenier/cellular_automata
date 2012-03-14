@@ -39,5 +39,5 @@ if __name__ == '__main__':
     cc = cellular_automata( "0"*int(steps)+"1"+"0"*int(steps),rule=int(rule))
 
     for step in cc():
-        print step# -*- coding: utf-8 -*-
+        print step
   
