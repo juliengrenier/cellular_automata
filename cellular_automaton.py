@@ -4,9 +4,9 @@ def int2bin(n, count=24):
     """returns the binary of integer n, using count number of digits"""
     return "".join([str((n >> y) & 1) for y in range(count-1, -1, -1)])
 
-class cellular_automata(object):
+class cellular_automaton(object):
     """
-        Simple one-dimensional cellular automata
+        Simple one-dimensional cellular automaton
     """
     def __init__(self,config, rule=34):
         self.config = config
@@ -36,7 +36,7 @@ if __name__ == '__main__':
         rule = 30
         steps = 50
 
-    cc = cellular_automata( "0"*int(steps)+"1"+"0"*int(steps),rule=int(rule))
+    cc = cellular_automaton( "0"*int(steps)+"1"+"0"*int(steps),rule=int(rule))
 
     for step in cc():
         print step
