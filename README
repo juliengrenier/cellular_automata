@@ -1,2 +1,10 @@
 Implementation on a one-dimensional cellular automaton
 see http://mathworld.wolfram.com/ElementaryCellularAutomaton.html for more info
+
+HOW TO:
+
+$ python cellular_automaton.py <rule> <number_of_iterations>
+
+where:
+	rule is the rule number between 0 and 255.
+	number_of_iterations is the number of iterations wanted.
